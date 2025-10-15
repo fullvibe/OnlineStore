@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <img class="header__logo" src="./logo.png" alt="" />
+        <div class="header__categories">
+          <button class="header__category">Home</button>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__search">
+          <input type="text" class="header__input" />
+          <button class="header__btn"><img src="./search.svg" alt="" /></button>
+        </div>
+        <select class="header__select">
+          <option value="">Default</option>
+          <option value="">Price ↑</option>
+          <option value="">Price ↓</option>
+          <option value="">Title</option>
+          <option value="">Popular</option>
+        </select>
+        <button class="header__basket">Cart</button>
+      </div>
+    </header>
+    <div class="categories"></div>
+    <main class="products">
+      <template class="product__template">
+        <div class="product">
+          <div class="product__top">
+            <img class="product__img" src="./product.webp" alt="" />
+            <h3 class="product__title">Футболка</h3>
+            <p class="product__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
+              voluptas.
+            </p>
+          </div>
+          <div class="product__bottom">
+            <p class="product__price">280$</p>
+            <button class="product__btn">Add to Cart</button>
+          </div>
+        </div>
+      </template>
+    </main>
+    <div class="modal">
+      <div class="modal__content">
+        <img src="./close.svg" alt="" class="modal__close" />
+        <div class="modal__body">
+          <h2 class="modal__title">1 товар на 639 ₽</h2>
+          <div class="modal__products">
+            <template class="modal__template">
+              <div class="modal__product">
+                <div class="modal__top">
+                  <div class="modal__left">
+                    <img src="./product.webp" alt="" class="modal__img" />
+                    <div>
+                      <p class="modal__name">Пикантные колбаски</p>
+                      <p class="modal__text">30 см, традиционное тесто 30</p>
+                    </div>
+                  </div>
+                  <img src="./close2.svg" alt="" class="modal__btn" />
+                </div>
+                <div class="modal__bottom">
+                  <p class="modal__price">639 ₽</p>
+                  <div class="modal__counter">
+                    <img src="./remove.svg" alt="" class="modal__remove" />
+                    <span class="modal__count">0</span>
+                    <img src="./add.svg" alt="" class="modal__add" />
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+          <div class="modal__info">
+            <div class="modal__row">
+              <p>Сумма заказа</p>
+              <p class="modal__fullprice">639 ₽</p>
+            </div>
+            <button class="modal__order">К оформлению заказа</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
