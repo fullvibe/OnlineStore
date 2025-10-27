@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: rgb(253, 244, 233);
+  background-color: #6a6f4c;
   font-size: 20px;
 }
 .header {
@@ -9,7 +9,7 @@ body {
   top: 0;
   width: 100%;
   height: 70px;
-  background-color: rgba(255, 255, 255, 0.507);
+  background-color: #f8f6ee4d;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,8 +32,9 @@ body {
 }
 .header__category {
   background: none;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 800;
+  font-size: 22px;
+  color: #422f28;
 }
 .header__right {
   display: flex;
@@ -42,7 +43,7 @@ body {
 }
 .header__search {
   display: flex;
-  border: 1px solid orange;
+  border: 1px solid #422f28;
   border-radius: 20px;
   height: 44px;
   width: 300px;
@@ -55,7 +56,7 @@ body {
   background: none;
 }
 .header__btn {
-  background-color: orange;
+  background-color: #422f28;
   min-width: 50px;
 }
 
@@ -64,7 +65,7 @@ body {
   padding: 10px 30px;
   font-weight: 600;
   font-size: 20px;
-  background-color: orange;
+  background-color: #422f28;
   color: white;
 }
 .header__select {
@@ -72,8 +73,8 @@ body {
   padding: 10px 30px;
   font-weight: 600;
   font-size: 20px;
-  background-color: white;
-  border: 1px solid orange;
+  background-color: #f8f6ee4d;
+  border: 1px solid #422f28;
   color: black;
 }
 .products {
@@ -88,7 +89,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.205);
   border-radius: 15px;
   padding: 10px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -131,7 +132,7 @@ body {
   padding: 10px 30px;
   font-weight: 600;
   font-size: 20px;
-  background-color: orange;
+  background-color: #422f28;
   color: white;
 }
 .categories {
@@ -197,7 +198,7 @@ html:has(.modal__active){
   transform: rotate(180deg);
 }
 .modal__body {
-  background-color: rgb(209, 209, 209);
+  background-color: #6a6f4c;
   min-height: 100%;
   width: 450px;
   display: flex;
@@ -220,7 +221,7 @@ html:has(.modal__active){
   padding-bottom: 15px;
 }
 .modal__product {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.205);
   padding: 15px;
 }
 .modal__top {
@@ -242,7 +243,7 @@ html:has(.modal__active){
   font-size: 18px;
 }
 .modal__text {
-  color: gray;
+  color: black;
   font-size: 14px;
 }
 .modal__btn {
@@ -260,7 +261,7 @@ html:has(.modal__active){
 .modal__counter {
   display: flex;
   align-items: center;
-  background-color: rgb(235, 235, 235);
+  background-color: #6a6f4c;
   border-radius: 20px;
   padding: 5px 15px;
   gap: 10px;
@@ -272,7 +273,7 @@ html:has(.modal__active){
 .modal__add {
 }
 .modal__info {
-  background-color: white;
+  background-color: #422f2823;
   padding: 30px;
 }
 .modal__row {
@@ -287,7 +288,7 @@ html:has(.modal__active){
   padding: 20px 30px;
   font-weight: 600;
   font-size: 20px;
-  background-color: orange;
+  background-color: #422f28;
   color: white;
   width: 100%;
 }

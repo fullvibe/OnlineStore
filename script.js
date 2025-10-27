@@ -241,7 +241,7 @@ function calcProducts() {
     sum += item.price * item.count;
     count += item.count;
   });
-  sum = sum.toFixed(2);   
+  sum = sum.toFixed(2);
   if (count === 0) {
     modalTitle.innerHTML = "Cart is empty...";
   } else {
